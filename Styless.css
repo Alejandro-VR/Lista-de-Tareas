@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --black: #11191f ;
+    --dark-blue: #142632;
+    --blue: #203b4c;
+    --light-blue: #447596;
+    --light: #b7d3e8;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: outfit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, var(--dark-blue), var(--light-blue));
+}
+
+.contenedor {
+    height: 100%;
+    width: 80%;
+}
+
+/*Principal*/
+.contenedor-principal {
+    color: var(--white);
+}
+.contenedor-principal h1 {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+.contenedor-principal h2 {
+    letter-spacing: 1px;
+    text-align: center;
+}
+#fecha {
+    padding: 50px 0;
+}
+
+/*Agregar Tareas*/
+
+.agregar-tareas {
+    color: var(--white);
+    width: 100%;
+    margin: 40px 0;
+}
+.agregar-tareas form {
+    background-color: var(--light-blue);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+
+}
+.agregar-tareas input {
+    padding: 10px;
+    width: 100%;
+    background-color: var(--light-blue);
+    border-style: none;
+    font-size: 1.3rem;
+}
+.agregar-tareas i {
+    padding: 10px;
+    font-size: 20px;
+    margin: 0 0 0 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: var(--blue);
+}
+.agregar-tareas i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: var(--dark-blue);
+}
+.agregar-tareas input::placeholder {
+    font-size: 1.3rem;
+    color: var(--black);
+}
+
+/*Visualizar Tareas*/
+
+.visualizar-tareas h3 {
+    color: var(--white);
+    margin: 20px 0;
+}
+.visualizar-tareas li {
+    display: flex;
+    background: var(--dark-blue);
+    border-radius: 6px;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7px 0;
+}
+.visualizar-tareas i {
+    font-size: 25px;
+    color: var(--blue);
+}
+.visualizar-tareas i:hover {
+    color: var(--light);
+    cursor: pointer;
+}
+
+.visualizar-tareas p {
+    color: var(--light-blue);
+    font-size: 1.2rem;
+}
+
+/*Subrayado*/
+
+.subrayado {
+    text-decoration: line-through;
+    color: var(--white);
+}
